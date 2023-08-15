@@ -19,6 +19,10 @@
         position: absolute; left: 710px; top: 0px;
         width:200px;height:500px;
       }
+      #readme{
+        position: absolute; left: 0px; top: 510px;
+        width:900px;
+      }
       div.floatnone {
         float: left;
         vertical-align:top;
@@ -26,6 +30,8 @@
     </style>
 
 </head>
+<body>
+<div>
 <button id="plot" >表示</button>
 <textarea id="points" ></textarea>
 <canvas id="myCanvas" width="500" height="500"></canvas>
@@ -240,16 +246,18 @@
   <option value="テ,5952,960" class="ユーラシア極東部">ティクシ</option>
   <option value="ペ,7324,2428" class="ユーラシア極東部">ペトロパブロフスク</option>  
 </select>
-<div>
-使い方<br/>
-表示でプロットします<br/>
-z,xxx,yyy<br/>
-zとプロット<br/>
-xxx,yyy<br/>
-頭に勝手に行番号が入ってプロット<br/>
-aqua,black,blue,fuchsia,gray,green,lime,maroon,navy,olive,orange,purple,red,silver,teal,white,yellow<br/>
-プロットの色を変えます。<br/>
 </div>
+<div id="readme" >
+    使い方<br/>
+    表示でプロットします<br/>
+    z,xxx,yyy<br/>
+    zとプロット<br/>
+    xxx,yyy<br/>
+    頭に勝手に行番号が入ってプロット<br/>
+    aqua,black,blue,fuchsia,gray,green,lime,maroon,navy,olive,orange,purple,red,silver,teal,white,yellow<br/>
+    プロットの色を変えます。<br/>
+    </div>
+</body>
 <script>
   var canvas = document.getElementById("myCanvas");
   var ctx = canvas.getContext("2d");
